@@ -1,0 +1,19 @@
+# Flag indirect instruction patterns. Prefer imperative voice.
+extends: existence
+message: "Use direct imperative instructions (e.g., 'Click...', 'Run...') instead of '%s'."
+level: suggestion
+ignorecase: true
+tokens:
+  - you should click
+  - you should select
+  - you should open
+  - you should navigate
+  - you should run
+  - you need to click
+  - you need to select
+  - you will want to
+  - you might want to click
+  - it is recommended to
+  - it is necessary to
+  - you are able to
+  - you can go ahead and

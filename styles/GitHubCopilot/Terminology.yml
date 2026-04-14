@@ -1,0 +1,27 @@
+# Enforce correct capitalization and naming of all GitHub Copilot product terminology.
+extends: substitution
+message: "Use '%s' instead of '%s' for official GitHub Copilot terminology."
+level: error
+ignorecase: true
+swap:
+  # Core Products
+  github copilot: GitHub Copilot
+  copilot: Copilot
+  # Plans
+  copilot pro: Copilot Pro
+  copilot pro+: Copilot Pro+
+  copilot business: Copilot Business
+  copilot enterprise: Copilot Enterprise
+  copilot free: Copilot Free
+  # Features
+  copilot chat: Copilot Chat
+  copilot spaces: Copilot Spaces
+  copilot in the cli: Copilot in the CLI
+  copilot author: Copilot Author
+  agent management: Agent Management
+  agent skills: Agent Skills
+  agentic memory: Agentic Memory
+  # Integrations
+  github mobile: GitHub Mobile
+  windows terminal canary: Windows Terminal Canary
+  github cli: GitHub CLI

@@ -1,0 +1,54 @@
+# Catch common misspellings, compound word splits, and hyphenation errors
+# for Claude Code product terminology.
+extends: substitution
+message: "Use '%s' instead of '%s' for official Claude Code branding."
+level: error
+ignorecase: true
+swap:
+  # Core Brand
+  '(?:Claude-Code|Claude-code|claude-code|claudecode|ClaudeCode)': Claude Code
+  '(?:Anthropic\.com|anthropic\.com)': Anthropic
+  # Memory & Config Files
+  '(?:claude\.MD|CLAUDE\.MD|Claude\.Md)': `CLAUDE.md`
+  '(?:claude_md|claude-md)': `CLAUDE.md`
+  '(?:claude\.local\.MD|CLAUDE\.LOCAL\.md)': `CLAUDE.local.md`
+  '(?:skill\.MD|SKILL\.MD|Skill\.md)': `SKILL.md`
+  '(?:agents\.MD|AGENTS\.MD|Agents\.md|agent\.md)': `AGENTS.md`
+  '(?:memory\.md|MEMORY\.MD|Memory\.md)': `MEMORY.md`
+  # Enforce backticks on filenames
+  CLAUDE.md: `CLAUDE.md`
+  CLAUDE.local.md: `CLAUDE.local.md`
+  SKILL.md: `SKILL.md`
+  AGENTS.md: `AGENTS.md`
+  MEMORY.md: `MEMORY.md`
+  # Features
+  '(?:Auto-memory|AutoMemory|auto-Memory|Automemory)': auto memory
+  '(?:Auto-compaction|AutoCompaction|Autocompaction)': auto-compaction
+  '(?:Agent-teams|AgentTeams|agent-teams)': agent teams
+  '(?:Agent-SDK|AgentSDK|agent-sdk|agent sdk)': Agent SDK
+  '(?:Remote-Control|RemoteControl|remote-control)': Remote Control
+  '(?:Fast-mode|FastMode|Fastmode)': fast mode
+  '(?:Plan-mode|PlanMode|Planmode)': plan mode
+  '(?:Auto-mode|AutoMode|Automode)': auto mode
+  '(?:Ultraplan|ultra-plan|Ultra-plan|Ultra Plan)': ultraplan
+  # Slash Commands
+  '(?:/Compact|/COMPACT)': `/compact`
+  '(?:/Init|/INIT)': `/init`
+  '(?:/Memory|/MEMORY)': `/memory`
+  '(?:/Permissions|/PERMISSIONS)': `/permissions`
+  '(?:/Config|/CONFIG)': `/config`
+  # Enforce backticks on commands
+  /compact: `/compact`
+  /init: `/init`
+  /memory: `/memory`
+  /permissions: `/permissions`
+  /config: `/config`
+  # Subagents
+  '(?:Sub-agents|Sub agents|sub agents)': subagents
+  # Integration mis-stylings
+  '(?:Github Actions|github actions|Github actions)': GitHub Actions
+  '(?:Gitlab|gitlab|GitLab CI)': GitLab
+  '(?:Amazon bedrock|amazon Bedrock)': Amazon Bedrock
+  '(?:Google vertex|google vertex|Vertex ai|vertex AI)': Google Vertex AI
+  '(?:Jetbrains|jetbrains)': JetBrains
+  '(?:vs code|vscode|Visual studio code)': VS Code

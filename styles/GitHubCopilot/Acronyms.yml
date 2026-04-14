@@ -1,0 +1,11 @@
+# Enforce correct capitalization of acronyms related to GitHub Copilot.
+extends: substitution
+message: "Use '%s' instead of '%s' for acronyms."
+level: error
+ignorecase: true
+swap:
+  ai: AI
+  cli: CLI
+  pr: PR
+  api: API
+  ide: IDE

@@ -1,0 +1,30 @@
+# Acceptance list for Windsurf-specific terms so the spell checker
+# does not flag them as errors.
+extends: spelling
+message: "Did you spell '%s' correctly?"
+level: error
+custom: true
+filters:
+  - '[A-Z]{2,}'
+  - '\.'
+  - '@'
+accept:
+  - Windsurf
+  - Cascade
+  - Codeium
+  - Codemaps
+  - DeepWiki
+  - Supercomplete
+  - Worktrees
+  - codeiumignore
+  - devcontainer
+  - frontmatter
+  - allowlist
+  - denylist
+  - onboarding
+  - autocomplete
+  - MCP
+  - AGENTS
+  - RBAC
+  - SCIM
+  - SSO

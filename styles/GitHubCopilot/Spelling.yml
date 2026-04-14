@@ -1,0 +1,13 @@
+# Correct common spelling errors in GitHub Copilot context.
+extends: substitution
+message: "Did you mean '%s' instead of '%s'?"
+level: warning
+ignorecase: true
+swap:
+  recieve: receive
+  seperate: separate
+  definately: definitely
+  accesible: accessible
+  commited: committed
+  colaboration: collaboration
+  productivity: productivity

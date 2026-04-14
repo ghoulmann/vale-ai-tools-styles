@@ -1,0 +1,39 @@
+# Enforce correct capitalization and naming of Claude Code product terminology.
+extends: substitution
+message: "Use '%s' instead of '%s' for official Claude Code terminology."
+level: error
+ignorecase: true
+swap:
+  # Core Products & Brand
+  claude code: Claude Code
+  anthropic: Anthropic
+  # Memory & Configuration
+  claude\.md: CLAUDE.md
+  claude\.local\.md: CLAUDE.local.md
+  skill\.md: SKILL.md
+  agents\.md: AGENTS.md
+  # Models
+  claude opus: Claude Opus
+  claude sonnet: Claude Sonnet
+  claude haiku: Claude Haiku
+  opus 4\.6: Opus 4.6
+  sonnet 4\.6: Sonnet 4.6
+  haiku 4\.5: Haiku 4.5
+  # Features
+  auto memory: auto memory
+  auto-compaction: auto-compaction
+  agent teams: agent teams
+  agent sdk: Agent SDK
+  remote control: Remote Control
+  fast mode: fast mode
+  plan mode: plan mode
+  auto mode: auto mode
+  model context protocol: Model Context Protocol
+  # Integrations
+  github actions: GitHub Actions
+  gitlab ci/cd: GitLab CI/CD
+  amazon bedrock: Amazon Bedrock
+  google vertex ai: Google Vertex AI
+  microsoft foundry: Microsoft Foundry
+  # Tools (built-in)
+  webfetch: WebFetch

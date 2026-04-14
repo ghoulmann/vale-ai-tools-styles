@@ -1,0 +1,11 @@
+# GitHub Copilot docs reference UI elements with specific phrasing.
+extends: substitution
+message: "Use '%s' instead of '%s' for GitHub Copilot UI elements."
+level: warning
+ignorecase: true
+swap:
+  copilot button: Copilot button
+  chat interface: Copilot Chat
+  suggestions panel: suggestions panel
+  terminal chat: Terminal Chat
+  github mobile: GitHub Mobile

@@ -1,0 +1,42 @@
+# Catch common misspellings, compound word splits, and hyphenation errors
+# for Windsurf product terminology.
+extends: substitution
+message: "Use '%s' instead of '%s' for official Windsurf branding."
+level: error
+ignorecase: true
+swap:
+  # Core Products & Brand
+  '(?:Wind surf|Wind-surf)': Windsurf
+  '(?:Wind surf rules|Wind-surf rules|windsurf-rules)': Windsurf Rules
+  '(?:Code-ium|Codium)': Codeium
+  # Modes
+  Cascade-mode: Cascade mode
+  Arena-mode: Arena Mode
+  # Features & Mis-stylings
+  '(?:Smartpaste|smart-paste|Smart-Paste)': Smart Paste
+  '(?:Super-complete|Super complete)': Supercomplete
+  '(?:Deep wiki|Deep-wiki|Deep Wiki)': DeepWiki
+  '(?:Code-maps|Code maps|Code Maps)': Codemaps
+  '(?:Code-lenses|Code-lens)': Code Lenses
+  '(?:Vibe-and-replace|Vibe & Replace|vibe-and-replace)': Vibe and Replace
+  '(?:AI-commit-messages|Ai Commit Messages)': AI Commit Messages
+  '(?:App-deploys|app-deploys)': App Deploys
+  '(?:Browser-previews|browser-previews)': Browser Previews
+  # Context & Protocols
+  '(?:Mcp|mcp protocol|MCP protocol)': MCP
+  '(?:Fastcontext|fast-context|Fast-Context)': Fast Context
+  '(?:Cascadehooks|cascade-hooks|Cascade-hooks)': Cascade Hooks
+  '(?:Named-checkpoints|named-checkpoints)': Named Checkpoints
+  '(?:Queued-messages|queued-messages)': Queued Messages
+  # Configuration Files
+  '(?:\.Codeiumignore|codeium_ignore|\.codeium_ignore|codeiumignore)': `.codeiumignore`
+  '(?:agents\.md|Agents\.md|agent\.md|AGENT\.md)': `AGENTS.md`
+  '(?:mcp-config\.json|mcpconfig\.json|MCP_config\.json)': `mcp_config.json`
+  # Enforce backticks on filenames
+  .codeiumignore: `.codeiumignore`
+  AGENTS.md: `AGENTS.md`
+  mcp_config.json: `mcp_config.json`
+  # Enforce backticks on file paths
+  .windsurf/workflows: `.windsurf/workflows`
+  # Workflow
+  '(?:Work-trees|Work trees|work-trees)': Worktrees

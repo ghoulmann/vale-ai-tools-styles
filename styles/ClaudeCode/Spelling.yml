@@ -1,0 +1,38 @@
+# Acceptance list for Claude Code-specific terms so the spell checker
+# does not flag them as errors.
+extends: spelling
+message: "Did you spell '%s' correctly?"
+level: error
+custom: true
+filters:
+  - '[A-Z]{2,}'
+  - '\.'
+  - '@'
+  - '/'
+accept:
+  - Anthropic
+  - subagent
+  - subagents
+  - ultraplan
+  - teleport
+  - worktree
+  - worktrees
+  - compaction
+  - codebase
+  - frontmatter
+  - gitignore
+  - gitignored
+  - monorepo
+  - monorepos
+  - keybindings
+  - WebFetch
+  - MCP
+  - CLAUDE
+  - SKILL
+  - AGENTS
+  - MEMORY
+  - RBAC
+  - SCIM
+  - SSO
+  - devcontainer
+  - statusline

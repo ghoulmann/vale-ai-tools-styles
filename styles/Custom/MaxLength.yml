@@ -1,0 +1,14 @@
+# Sentence length rule
+extends: existence
+message: "Sentence exceeds 160 characters."
+level: warning
+scope: sentence
+max: 160
+
+---
+# Paragraph length rule
+extends: occurrence
+message: "Paragraph exceeds 500 words."
+level: warning
+scope: paragraph
+max: 500

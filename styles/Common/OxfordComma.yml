@@ -1,0 +1,8 @@
+# Use the Oxford comma in lists.
+extends: existence
+message: "Use the Oxford comma in '%s'."
+level: suggestion
+scope: sentence
+nonword: true
+tokens:
+  - '(?:[^\s,]+,){2,}\s(?:and|or)\s'

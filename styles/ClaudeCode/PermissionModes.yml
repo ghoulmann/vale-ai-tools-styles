@@ -1,0 +1,16 @@
+# Enforce correct naming of Claude Code permission modes.
+# These are code identifiers and must use exact casing.
+extends: substitution
+message: "Use '%s' instead of '%s' for permission mode names."
+level: error
+ignorecase: false
+swap:
+  bypasspermissions: bypassPermissions
+  BypassPermissions: bypassPermissions
+  Bypasspermissions: bypassPermissions
+  acceptedits: acceptEdits
+  AcceptEdits: acceptEdits
+  Acceptedits: acceptEdits
+  dontask: dontAsk
+  DontAsk: dontAsk
+  Dontask: dontAsk

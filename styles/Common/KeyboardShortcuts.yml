@@ -1,0 +1,11 @@
+# Enforce cross-platform keyboard shortcut format.
+# Platform-specific shortcuts should use Cmd/Ctrl+Key notation.
+extends: existence
+message: "Use cross-platform 'Cmd/Ctrl+Key' format for keyboard shortcuts instead of '%s'."
+level: warning
+tokens:
+  - 'Ctrl\+[A-Za-z](?!.*/)'
+  - 'CTRL\+[A-Za-z]'
+  - 'ctrl\+[A-Za-z]'
+  - 'CMD\+[A-Za-z]'
+  - 'cmd\+[A-Za-z]'

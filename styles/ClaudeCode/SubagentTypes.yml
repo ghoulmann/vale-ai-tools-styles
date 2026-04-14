@@ -1,0 +1,10 @@
+# Enforce correct capitalization of Claude Code subagent type names.
+extends: substitution
+message: "Use '%s' instead of '%s' for subagent type names."
+level: error
+ignorecase: true
+swap:
+  explore subagent: Explore subagent
+  plan subagent: Plan subagent
+  general purpose subagent: general-purpose subagent
+  code reviewer subagent: code-reviewer subagent

@@ -1,0 +1,10 @@
+# Enforce correct naming of Claude Code configuration paths and directories.
+extends: substitution
+message: "Use '%s' instead of '%s' for Claude Code paths."
+level: error
+ignorecase: false
+swap:
+  '\.claude/command(?:s)?/': .claude/skills/
+  '\.claude/setting(?:s)?\.json': .claude/settings.json
+  '\.claude/setting(?:s)?\.local\.json': .claude/settings.local.json
+  '~/\.claude/setting(?:s)?\.json': ~/.claude/settings.json

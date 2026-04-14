@@ -1,0 +1,18 @@
+# Flag overly formal or negative phrasing in documentation.
+extends: existence
+message: "Use a friendly, encouraging tone. Rephrase '%s'."
+level: suggestion
+ignorecase: true
+tokens:
+  - you must not
+  - you are forbidden
+  - do not ever
+  - failure to comply
+  - it is imperative that
+  - under no circumstances
+  - be advised that
+  - take note that you
+  - be aware that you must
+  - mandatory requirement
+  - strictly prohibited
+  - is not permitted

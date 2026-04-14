@@ -1,0 +1,11 @@
+# Enforce correct capitalization of Windsurf subscription plan names.
+extends: substitution
+message: "Use '%s' instead of '%s'."
+level: error
+ignorecase: true
+swap:
+  free plan: Free plan
+  pro plan: Pro plan
+  max plan: Max plan
+  teams plan: Teams plan
+  enterprise plan: Enterprise plan

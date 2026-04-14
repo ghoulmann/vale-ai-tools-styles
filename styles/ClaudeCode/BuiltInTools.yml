@@ -1,0 +1,20 @@
+# Enforce correct casing of Claude Code built-in tool names.
+# These are PascalCase identifiers.
+extends: substitution
+message: "Use '%s' instead of '%s' for built-in tool names."
+level: error
+ignorecase: false
+swap:
+  webfetch: WebFetch
+  Webfetch: WebFetch
+  web_fetch: WebFetch
+  notebookedit: NotebookEdit
+  notebook_edit: NotebookEdit
+  taskcreate: TaskCreate
+  task_create: TaskCreate
+  taskupdate: TaskUpdate
+  task_update: TaskUpdate
+  toolsearch: ToolSearch
+  tool_search: ToolSearch
+  askuserquestion: AskUserQuestion
+  ask_user_question: AskUserQuestion

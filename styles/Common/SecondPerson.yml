@@ -1,0 +1,19 @@
+# Technical docs should use second person (you/your).
+# Flag first person plural. Exception: "Let's" is acceptable.
+extends: existence
+message: "Use second person ('you/your') instead of first person '%s'."
+level: warning
+ignorecase: true
+tokens:
+  - we recommend
+  - we suggest
+  - our product
+  - our tool
+  - our platform
+  - we have developed
+  - we provide
+  - we offer
+  - our team has
+  - we built
+  - we designed
+  - we created

@@ -1,0 +1,16 @@
+# Ensure competitor product names are correctly capitalized
+# when referenced in GitHub Copilot docs.
+extends: substitution
+message: "Use '%s' instead of '%s'."
+level: error
+ignorecase: true
+swap:
+  vs code: VS Code
+  vscode: VS Code
+  visual studio code: VS Code
+  jetbrains: JetBrains
+  intellij: IntelliJ
+  pycharm: PyCharm
+  windsurf: Windsurf
+  claude code: Claude Code
+  cursor: Cursor

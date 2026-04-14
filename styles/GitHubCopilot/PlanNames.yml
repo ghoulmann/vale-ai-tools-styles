@@ -1,0 +1,11 @@
+# Enforce correct capitalization of GitHub Copilot subscription plan names.
+extends: substitution
+message: "Use '%s' instead of '%s'."
+level: error
+ignorecase: true
+swap:
+  copilot free: Copilot Free
+  copilot pro: Copilot Pro
+  copilot pro+: Copilot Pro+
+  copilot business: Copilot Business
+  copilot enterprise: Copilot Enterprise

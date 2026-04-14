@@ -1,0 +1,43 @@
+# Enforce correct capitalization and naming of all Windsurf product terminology.
+extends: substitution
+message: "Use '%s' instead of '%s' for official Windsurf terminology."
+level: error
+ignorecase: true
+swap:
+  # Core Products
+  windsurf: Windsurf
+  cascade: Cascade
+  codeium: Codeium
+  # Modes
+  cascade code: Cascade Code
+  code mode: Code mode
+  cascade chat: Cascade Chat
+  chat mode: Chat mode
+  arena mode: Arena Mode
+  # Core Features
+  ai commit messages: AI Commit Messages
+  app deploys: App Deploys
+  browser previews: Browser Previews
+  cascade hooks: Cascade Hooks
+  code lenses: Code Lenses
+  codemaps: Codemaps
+  deepwiki: DeepWiki
+  explain and fix: Explain and Fix
+  fast context: Fast Context
+  memories & rules: Memories & Rules
+  windsurf rules: Windsurf Rules
+  named checkpoints: Named Checkpoints
+  plans and todo lists: Plans and Todo Lists
+  queued messages: Queued Messages
+  real-time awareness: Real-time awareness
+  send to cascade: Send to Cascade
+  simultaneous cascades: Simultaneous Cascades
+  tool calling: Tool Calling
+  vibe and replace: Vibe and Replace
+  smart paste: Smart Paste
+  supercomplete: Supercomplete
+  # Configuration & Protocols
+  model context protocol: Model Context Protocol
+  # Workflow Tools
+  worktrees: Worktrees
+  linter integration: Linter integration

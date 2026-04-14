@@ -1,0 +1,41 @@
+# Enforce that acronyms used in Claude Code docs are defined on first use
+# or are common enough to stand alone.
+extends: conditional
+message: "Spell out '%s' on first use."
+level: suggestion
+ignorecase: false
+first: '\b([A-Z]{2,})\b'
+second: '(?:\w+ ){0,5}\(([A-Z]{2,})\)'
+exceptions:
+  - MCP
+  - AI
+  - IDE
+  - SSH
+  - SSO
+  - API
+  - CLI
+  - URL
+  - UI
+  - WSL
+  - RBAC
+  - SCIM
+  - YAML
+  - JSON
+  - HTML
+  - CSS
+  - HTTP
+  - HTTPS
+  - OS
+  - RAM
+  - CPU
+  - GPU
+  - FAQ
+  - PR
+  - CI
+  - CD
+  - JWT
+  - SDK
+  - MDM
+  - LLM
+  - UUID
+  - OAuth

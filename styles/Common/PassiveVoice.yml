@@ -1,0 +1,19 @@
+# Prefer active voice in technical documentation.
+extends: existence
+message: "Prefer active voice. '%s' uses passive construction."
+level: suggestion
+ignorecase: true
+tokens:
+  - is configured by
+  - is enabled by
+  - is accessed by
+  - is managed by
+  - was installed by
+  - was created by
+  - will be shown by
+  - can be found by
+  - has been set by
+  - should be configured by
+  - is controlled by
+  - is provided by
+  - was designed by

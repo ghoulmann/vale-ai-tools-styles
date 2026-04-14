@@ -1,0 +1,22 @@
+# Enforce correct formatting of Claude Code slash commands.
+# Slash commands should be lowercase and use the / prefix.
+extends: substitution
+message: "Use '%s' instead of '%s' for Claude Code commands."
+level: warning
+ignorecase: false
+swap:
+  '(?:the |a )?compact command': /compact
+  '(?:the |a )?init command': /init
+  '(?:the |a )?memory command': /memory
+  '(?:the |a )?permissions command': /permissions
+  '(?:the |a )?config command': /config
+  '(?:the |a )?resume command': /resume
+  '(?:the |a )?clear command': /clear
+  '(?:the |a )?model command': /model
+  '(?:the |a )?help command': /help
+  '(?:the |a )?diff command': /diff
+  '(?:the |a )?doctor command': /doctor
+  '(?:the |a )?loop command': /loop
+  '(?:the |a )?batch command': /batch
+  '(?:the |a )?schedule command': /schedule
+  '(?:the |a )?plan command': /plan

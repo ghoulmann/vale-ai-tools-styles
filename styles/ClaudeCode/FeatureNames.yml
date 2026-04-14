@@ -1,0 +1,27 @@
+# Enforce correct capitalization of Claude Code feature names.
+extends: substitution
+message: "Use '%s' instead of '%s' for Claude Code features."
+level: error
+ignorecase: true
+swap:
+  # Core features
+  dispatch: Dispatch
+  # Permission modes
+  bypass permissions: bypassPermissions
+  accept edits: acceptEdits
+  don't ask: dontAsk
+  # Subagent types
+  explore agent: Explore agent
+  plan agent: Plan agent
+  general-purpose agent: general-purpose agent
+  # Tools
+  notebook edit: NotebookEdit
+  task create: TaskCreate
+  task update: TaskUpdate
+  tool search: ToolSearch
+  # Hooks events
+  pre tool use: PreToolUse
+  post tool use: PostToolUse
+  permission request: PermissionRequest
+  session start: SessionStart
+  session end: SessionEnd

@@ -1,0 +1,14 @@
+# Avoid generic link text for accessibility.
+extends: existence
+message: "Avoid generic link text '%s'. Use descriptive text instead."
+level: warning
+link: https://www.w3.org/WAI/WCAG21/Techniques/general/G91
+scope: raw
+tokens:
+  - click here
+  - here
+  - this link
+  - this page
+  - read more
+  - more info
+  - learn more

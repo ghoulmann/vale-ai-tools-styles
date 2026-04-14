@@ -1,0 +1,13 @@
+# Windsurf docs reference UI elements with specific phrasing.
+extends: substitution
+message: "Use '%s' instead of '%s' for Windsurf UI elements."
+level: warning
+ignorecase: true
+swap:
+  profile icon: Profile icon dropdown
+  cascade button: Cascade icon
+  customization icon: Customizations icon
+  settings button: Windsurf Settings
+  mcp button: MCPs icon
+  settings page: Windsurf Settings
+  command bar: Command Palette

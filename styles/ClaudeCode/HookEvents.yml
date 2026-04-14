@@ -1,0 +1,49 @@
+# Enforce correct casing of Claude Code hook event names.
+# These are PascalCase identifiers.
+extends: substitution
+message: "Use '%s' instead of '%s' for hook event names."
+level: error
+ignorecase: false
+swap:
+  pretooluse: PreToolUse
+  Pretooluse: PreToolUse
+  pre_tool_use: PreToolUse
+  posttooluse: PostToolUse
+  Posttooluse: PostToolUse
+  post_tool_use: PostToolUse
+  permissionrequest: PermissionRequest
+  permission_request: PermissionRequest
+  permissiondenied: PermissionDenied
+  permission_denied: PermissionDenied
+  sessionstart: SessionStart
+  session_start: SessionStart
+  sessionend: SessionEnd
+  session_end: SessionEnd
+  userpromptsubmit: UserPromptSubmit
+  user_prompt_submit: UserPromptSubmit
+  filechanged: FileChanged
+  file_changed: FileChanged
+  cwdchanged: CwdChanged
+  cwd_changed: CwdChanged
+  instructionsloaded: InstructionsLoaded
+  instructions_loaded: InstructionsLoaded
+  precompact: PreCompact
+  pre_compact: PreCompact
+  postcompact: PostCompact
+  post_compact: PostCompact
+  configchange: ConfigChange
+  config_change: ConfigChange
+  subagentstart: SubagentStart
+  subagent_start: SubagentStart
+  subagentstop: SubagentStop
+  subagent_stop: SubagentStop
+  teammateidle: TeammateIdle
+  teammate_idle: TeammateIdle
+  taskcreated: TaskCreated
+  task_created: TaskCreated
+  taskcompleted: TaskCompleted
+  task_completed: TaskCompleted
+  workTreeCreate: WorktreeCreate
+  worktree_create: WorktreeCreate
+  workTreeRemove: WorktreeRemove
+  worktree_remove: WorktreeRemove

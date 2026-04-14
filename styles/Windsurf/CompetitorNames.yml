@@ -1,0 +1,16 @@
+# Ensure competitor product names are correctly capitalized
+# when referenced in Windsurf docs.
+extends: substitution
+message: "Use '%s' instead of '%s'."
+level: error
+ignorecase: true
+swap:
+  vs code: VS Code
+  vscode: VS Code
+  Visual studio code: VS Code
+  Jetbrains: JetBrains
+  jetbrains: JetBrains
+  neovim: NeoVim
+  github copilot: GitHub Copilot
+  Github copilot: GitHub Copilot
+  github Copilot: GitHub Copilot
