@@ -1,7 +1,7 @@
 # Catch common misspellings, compound word splits, and hyphenation errors
 # for Claude Code product terminology.
 extends: substitution
-message: "Use '%s' instead of '%s' for official Claude Code branding."
+message: "Use backticks for filename and command references."
 level: error
 ignorecase: true
 swap:
@@ -9,18 +9,18 @@ swap:
   '(?:Claude-Code|Claude-code|claude-code|claudecode|ClaudeCode)': Claude Code
   '(?:Anthropic\.com|anthropic\.com)': Anthropic
   # Memory & Config Files
-  '(?:claude\.MD|CLAUDE\.MD|Claude\.Md)': `CLAUDE.md`
-  '(?:claude_md|claude-md)': `CLAUDE.md`
-  '(?:claude\.local\.MD|CLAUDE\.LOCAL\.md)': `CLAUDE.local.md`
-  '(?:skill\.MD|SKILL\.MD|Skill\.md)': `SKILL.md`
-  '(?:agents\.MD|AGENTS\.MD|Agents\.md|agent\.md)': `AGENTS.md`
-  '(?:memory\.md|MEMORY\.MD|Memory\.md)': `MEMORY.md`
+  '(?:claude\.MD|CLAUDE\.MD|Claude\.Md)': '`CLAUDE.md`'
+  '(?:claude_md|claude-md)': '`CLAUDE.md`'
+  '(?:claude\.local\.MD|CLAUDE\.LOCAL\.md)': '`CLAUDE.local.md`'
+  '(?:skill\.MD|SKILL\.MD|Skill\.md)': '`SKILL.md`'
+  '(?:agents\.MD|AGENTS\.MD|Agents\.md|agent\.md)': '`AGENTS.md`'
+  '(?:memory\.md|MEMORY\.MD|Memory\.md)': '`MEMORY.md`'
   # Enforce backticks on filenames
-  CLAUDE.md: `CLAUDE.md`
-  CLAUDE.local.md: `CLAUDE.local.md`
-  SKILL.md: `SKILL.md`
-  AGENTS.md: `AGENTS.md`
-  MEMORY.md: `MEMORY.md`
+  CLAUDE.md: '`CLAUDE.md`'
+  CLAUDE.local.md: '`CLAUDE.local.md`'
+  SKILL.md: '`SKILL.md`'
+  AGENTS.md: '`AGENTS.md`'
+  MEMORY.md: '`MEMORY.md`'
   # Features
   '(?:Auto-memory|AutoMemory|auto-Memory|Automemory)': auto memory
   '(?:Auto-compaction|AutoCompaction|Autocompaction)': auto-compaction
@@ -32,17 +32,17 @@ swap:
   '(?:Auto-mode|AutoMode|Automode)': auto mode
   '(?:Ultraplan|ultra-plan|Ultra-plan|Ultra Plan)': ultraplan
   # Slash Commands
-  '(?:/Compact|/COMPACT)': `/compact`
-  '(?:/Init|/INIT)': `/init`
-  '(?:/Memory|/MEMORY)': `/memory`
-  '(?:/Permissions|/PERMISSIONS)': `/permissions`
-  '(?:/Config|/CONFIG)': `/config`
+  '(?:/Compact|/COMPACT)': '`/compact`'
+  '(?:/Init|/INIT)': '`/init`'
+  '(?:/Memory|/MEMORY)': '`/memory`'
+  '(?:/Permissions|/PERMISSIONS)': '`/permissions`'
+  '(?:/Config|/CONFIG)': '`/config`'
   # Enforce backticks on commands
-  /compact: `/compact`
-  /init: `/init`
-  /memory: `/memory`
-  /permissions: `/permissions`
-  /config: `/config`
+  /compact: '`/compact`'
+  /init: '`/init`'
+  /memory: '`/memory`'
+  /permissions: '`/permissions`'
+  /config: '`/config`'
   # Subagents
   '(?:Sub-agents|Sub agents|sub agents)': subagents
   # Integration mis-stylings

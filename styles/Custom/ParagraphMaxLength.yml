@@ -1,0 +1,7 @@
+# Paragraph length rule
+extends: occurrence
+message: "Paragraph exceeds 500 words."
+level: warning
+scope: paragraph
+token: '\w+'
+max: 500

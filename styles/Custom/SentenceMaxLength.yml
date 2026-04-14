@@ -1,0 +1,7 @@
+# Sentence length rule - flag sentences over 160 characters
+extends: occurrence
+message: "Sentence exceeds 160 characters."
+level: warning
+scope: sentence
+token: '.+'
+max: 160

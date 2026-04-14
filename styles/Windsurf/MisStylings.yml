@@ -29,14 +29,14 @@ swap:
   '(?:Named-checkpoints|named-checkpoints)': Named Checkpoints
   '(?:Queued-messages|queued-messages)': Queued Messages
   # Configuration Files
-  '(?:\.Codeiumignore|codeium_ignore|\.codeium_ignore|codeiumignore)': `.codeiumignore`
-  '(?:agents\.md|Agents\.md|agent\.md|AGENT\.md)': `AGENTS.md`
-  '(?:mcp-config\.json|mcpconfig\.json|MCP_config\.json)': `mcp_config.json`
+  '(?:\.Codeiumignore|codeium_ignore|\.codeium_ignore|codeiumignore)': '`.codeiumignore`'
+  '(?:agents\.md|Agents\.md|agent\.md|AGENT\.md)': '`AGENTS.md`'
+  '(?:mcp-config\.json|mcpconfig\.json|MCP_config\.json)': '`mcp_config.json`'
   # Enforce backticks on filenames
-  .codeiumignore: `.codeiumignore`
-  AGENTS.md: `AGENTS.md`
-  mcp_config.json: `mcp_config.json`
+  .codeiumignore: '`.codeiumignore`'
+  AGENTS.md: '`AGENTS.md`'
+  mcp_config.json: '`mcp_config.json`'
   # Enforce backticks on file paths
-  .windsurf/workflows: `.windsurf/workflows`
+  .windsurf/workflows: '`.windsurf/workflows`'
   # Workflow
   '(?:Work-trees|Work trees|work-trees)': Worktrees

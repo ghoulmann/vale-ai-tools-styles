@@ -6,29 +6,29 @@ level: error
 ignorecase: true
 swap:
   # Core Brand
-  '(?:Github Copilot|github-copilot|Github-copilot|GitHub-copilot)': GitHub Copilot
-  '(?:Github|github)': GitHub
+  "(?:Github Copilot|github-copilot|Github-copilot|GitHub-copilot)": "GitHub Copilot"
+  "(?:Github|github)": "GitHub"
   # Plans
-  '(?:Copilot-pro|Copilot Pro)': Copilot Pro
-  '(?:Copilot-pro\+|Copilot Pro\+|Copilot-pro-plus)': Copilot Pro+
-  '(?:Copilot-business|Copilot Business)': Copilot Business
-  '(?:Copilot-enterprise|Copilot Enterprise)': Copilot Enterprise
-  '(?:Copilot-free|Copilot Free)': Copilot Free
+  "(?:Copilot-pro|Copilot Pro)": "Copilot Pro"
+  "(?:Copilot-pro\\+|Copilot Pro\\+|Copilot-pro-plus)": "Copilot Pro+"
+  "(?:Copilot-business|Copilot Business)": "Copilot Business"
+  "(?:Copilot-enterprise|Copilot Enterprise)": "Copilot Enterprise"
+  "(?:Copilot-free|Copilot Free)": "Copilot Free"
   # Features
-  '(?:Copilot-chat|Copilot Chat)': Copilot Chat
-  '(?:Copilot-spaces|Copilot Spaces)': Copilot Spaces
-  '(?:Copilot-cli|Copilot in the CLI)': Copilot in the CLI
+  "(?:Copilot-chat|Copilot Chat)": "Copilot Chat"
+  "(?:Copilot-spaces|Copilot Spaces)": "Copilot Spaces"
+  "(?:Copilot-cli|Copilot in the CLI)": "Copilot in the CLI"
   # GitHub CLI Commands
-  '(?:Gh|GH)': `gh`
-  '(?:Gh repo|gh-repo|Gh-repo)': `gh repo`
-  '(?:Gh pr|gh-pr|Gh-pr)': `gh pr`
-  '(?:Gh issue|gh-issue|Gh-issue)': `gh issue`
-  '(?:Gh copilot|gh-copilot|Gh-copilot)': `gh copilot`
+  "(?:Gh|GH)": "`gh`"
+  "(?:Gh repo|gh-repo|Gh-repo)": "`gh repo`"
+  "(?:Gh pr|gh-pr|Gh-pr)": "`gh pr`"
+  "(?:Gh issue|gh-issue|Gh-issue)": "`gh issue`"
+  "(?:Gh copilot|gh-copilot|Gh-copilot)": "`gh copilot`"
   # Enforce backticks on commands
-  gh: `gh`
-  'gh repo': `gh repo`
-  'gh pr': `gh pr`
-  'gh issue': `gh issue`
-  'gh copilot': `gh copilot`
+  "gh": "`gh`"
+  "gh repo": "`gh repo`"
+  "gh pr": "`gh pr`"
+  "gh issue": "`gh issue`"
+  "gh copilot": "`gh copilot`"
   # Enforce backticks on file paths
-  .github/workflows: `.github/workflows`
+  ".github/workflows": "`.github/workflows`"
