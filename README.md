@@ -1,5 +1,7 @@
 # Vale AI Tools Style Guide
 
+> **Note:** The `.ini` configuration files in this repository are not ready to use out of the box. They will need to be reviewed and adjusted to match your specific environment, file paths, and style preferences before use.
+
 A comprehensive Vale style guide for AI-assisted development tools, ensuring consistent and professional documentation across Claude Code, Windsurf, and GitHub Copilot.
 
 ## Overview
